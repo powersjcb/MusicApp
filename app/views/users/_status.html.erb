@@ -1,0 +1,7 @@
+<% action_name = (logged_in? ? "Log out" : "Log in") %>
+<% action_url  = (logged_in? ? sessions_url : new_sessions_url ) %>
+<% method_name = (logged_in? ? "delete" : "get" ) %>
+
+<nav>
+<%= button_to action_name, action_url, method: method_name, class: "btn btn-primary" %>
+<nav>
