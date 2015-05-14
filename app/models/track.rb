@@ -22,4 +22,5 @@ class Track < ActiveRecord::Base
     through: :album,
     source: :band
   )
+
 end

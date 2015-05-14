@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150514212846) do
+ActiveRecord::Schema.define(version: 20150514214045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,4 +60,5 @@ ActiveRecord::Schema.define(version: 20150514212846) do
   add_index "users", ["session_token"], name: "index_users_on_session_token", unique: true, using: :btree
 
   add_foreign_key "albums", "bands", on_delete: :cascade
+  add_foreign_key "tracks", "albums", on_delete: :cascade
 end
