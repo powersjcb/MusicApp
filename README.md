@@ -33,3 +33,19 @@
 + \#log_in_user!(user)
 + \#log_out
 + \#logged_in?
+
+
+## HTML Forms
+### form arguments
++ action="<%= action_url %>"
++ method="post"
+
+### protect from forgery - input arguments
++ type="hidden"
++ name="authenticity_token"
++ value="<%= form_authenticity_token %>"
+
+### form input to change methods
++ type="hidden"
++ name="_method"
++ value="<%= method_name %>"
