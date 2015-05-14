@@ -15,15 +15,10 @@
 ### Methods
 + ::find_by_credentials(identifier, password)
 + ::generate_session_token
++ \#password=
 + \#ensure_session_token
 + \#reset_session_token!
 + \#is_password?(pw)
-
-## Users controller:
-
-### Views & Actions
-+ Sign-up page
-+ Sign-up action
 
 
 ## Sessions controller:
